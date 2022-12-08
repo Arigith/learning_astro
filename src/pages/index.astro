@@ -1,6 +1,4 @@
 ---
-import Hello from '../components/Hello.jsx';
-import TimeComponent from '../components/Time.jsx';
 import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "Home Page";
 const learning=['Programing with Python', 'AWS basics', 'Linux', 'Basic Networking', 'Databases', 'Basic CyberSecurity', 'DevOps']
@@ -24,7 +22,4 @@ const textCase = "uppercase";
 	<ul>
 		{learning.map((learnt) => <li class="learnt">{learnt}</li>)}
 	</ul>
-	<!-- to update serverside only -->
-	<Hello client:only="react"></Hello>
-	<TimeComponent client:only="react"></TimeComponent>
 </BaseLayout>

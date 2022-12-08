@@ -1,0 +1,14 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hello from "../components/Hello";
+import TimeComponent from "../components/Time";
+
+const pageTitle = "React Trial";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+<h2>Trialing react</h2>
+<!-- to update serverside only -->
+<Hello client:only="react"></Hello>
+<TimeComponent client:only="react"></TimeComponent>
+</BaseLayout>

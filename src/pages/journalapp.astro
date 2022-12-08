@@ -1,0 +1,10 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Journal from "../components/JournalApp";
+import MyList from "../components/MyList"
+---
+
+<BaseLayout>
+<Journal client:only="react"></Journal>
+<MyList name="Stacey's" color="green"><b>Blah</b></MyList>
+</BaseLayout>
